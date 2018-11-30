@@ -1,2 +1,0 @@
-# AboutAndroid
-About Android Project
