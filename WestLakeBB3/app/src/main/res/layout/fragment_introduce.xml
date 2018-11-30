@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="24dp"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="西湖"
+                    android:textSize="50dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="239dp"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/frame" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:lineSpacingExtra="7dp"
+                android:text="       西湖，位于浙江省杭州市西面，是中国大陆首批国家重点风景名胜区和中国十大风景名胜之一。它是中国大陆主要的观赏性淡水湖泊之一，也是现今《世界遗产名录》中少数几个和中国唯一一个湖泊类文化遗产。"
+                android:textSize="15dp" />
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/westlake2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:lineSpacingExtra="7dp"
+                android:text="       西湖三面环山，面积约6.39平方千米，绕湖一周近15千米。湖中被孤山、白堤、苏堤、杨公堤分隔，按面积大小分别为外西湖、西里湖、北里湖、小南湖及岳湖等五片水面，苏堤、白堤越过湖面，小瀛洲、湖心亭、阮公墩三个小岛鼎立于外西湖湖心，夕照山的雷峰塔与宝石山的保俶塔隔湖相映，由此形成了“一山、二塔、三岛、三堤、五湖”的基本格局。"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/westlake1" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:textSize="30dp"
+                android:text="西湖十景" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:lineSpacingExtra="7dp"
+                android:text="       历史上，杭州曾多次开展西湖十景评选活动，每次评选都极大地提高了西湖和杭州的知名度、美誉度。比如，南宋时评选产生的“西湖十景”，至今已流传了千年；1985年组织开展的“西湖新十景”评选活动，也在国内外产生了重大影响。而于2007年举行的“三评西湖十景”活动，更是进一步打响了西湖品牌，提升了西湖和杭州城市的知名度、美誉度和吸引力。"
+                android:textSize="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="handlesudi"
+                    android:text="苏堤春晓" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="       苏堤自北宋始建至今，一直保持了沿堤两侧相间种植桃树和垂柳的植物景观特色。春季拂晓是欣赏“苏堤春晓”的最佳时间，此时薄雾蒙蒙，垂柳初绿、桃花盛开，尽显西湖旖旎的柔美气质。" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="handleduanqiao"
+                    android:text="断桥残雪" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="       位于在西湖北部白堤东端的断桥一带， 范围约2.61公顷。尤以冬天观赏西湖雪景为胜。当西湖雪后初晴时，日出映照，断桥向阳的半边桥面上积雪融化、露出褐色的桥面一痕，仿佛长长的白链到此中断了， 呈“雪残桥断”之景。" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="handlepinglake"
+                    android:text="平湖秋月" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="      位于孤山东南角的滨湖地带、白堤西端南侧，是自湖北岸临湖观赏西湖水域全景的最佳地点之一。以秋天夜晚皓月当空之际观赏湖光月色为主题。" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="handleliu"
+                    android:text="柳浪闻莺" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="       “柳浪闻莺”所处的位置原为南宋时(12－13世纪)的御花园——“聚景园”，因园中多柳树，风摆成浪、莺啼婉转，故得题名“柳浪闻莺”。如今，“柳浪闻莺”依然保留了传统的柳林特色，漫步其间，且行且听，柳丝拂面，莺鸟鸣啼，一派生机盎然的景象。" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button9"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="handlefeng"
+                    android:text="双峰插云" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="       西湖南北高峰在唐宋时各有塔一座，在春、秋晴朗之日远望两峰，可见遥相对峙的双塔巍然耸立，气势非凡。每当云雾弥漫，塔尖于云中时隐时显，恍若云天佛国。" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button10"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="handlesantan"
+                    android:text="三潭印月" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="       小瀛洲岛在明万历间(16世纪)浚湖堆土而成，呈“湖中有岛，岛中有湖”的“田”字形格局，是江南水上园林的经典。全岛以亭台楼阁配以传统花木构成色彩绚丽的景致，与岛内外水光云天相映。" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button11"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="handlewatchfish"
+                    android:text="花港观鱼" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="       在苏堤映波桥西北197米处，介于小南湖与西里湖间，范围约0.25公顷。以赏花、观鱼为景观主题，体验自然的勃勃生机。春日里，落英缤纷，呈现出“花著鱼身鱼嘬花”的胜景。" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button12"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="handlesorth"
+                    android:text="南屏晚钟" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="       该景观属佛教文化古迹，以听觉欣赏为特征。南屏山麓自五代(10世纪)以来就有“东南佛国”的佛教胜地。始建于公元954年的净慈寺成为与灵隐寺并峙于西湖南北的两大佛教道场之一。" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button13"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="handleleifeng"
+                    android:text="雷峰夕照" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="       位于西湖南岸的夕照山一带，范围约13.19公顷，以黄昏时的山峰古塔剪影景观为观赏特点。
+该景观的最重要建筑要素为雷峰塔，始建于吴越国时期(977年)，民国(1924年)塔毁后以遗址形式保存，曾与保俶塔形成西湖南北两岸的对景，佐证了佛教文化的兴盛对西湖景观的直接影响。" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="174dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.22">
+
+                <Button
+                    android:id="@+id/button14"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="handlehehua"
+                    android:text="曲院风荷" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="       位于西湖北岸的苏堤北端西侧22米处，范围约0.06公顷，以夏日观荷为主题，在视觉上呈现出“接天连叶无穷碧，映日荷花别样红”的特色。" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

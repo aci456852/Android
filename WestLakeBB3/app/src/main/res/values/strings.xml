@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">西湖小导游</string>
+    <string name="title_home">Introduce</string>
+    <string name="title_dashboard">Trailer</string>
+    <string name="title_notifications">Customer service</string>
+    <string name="title_robot">robot</string>
+</resources>

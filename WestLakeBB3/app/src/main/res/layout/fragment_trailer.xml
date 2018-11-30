@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="340dp"
+                    android:layout_height="239dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="31dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/erquanyy" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/LabelStyle"
+                    android:layout_width="64dp"
+                    android:layout_height="35dp"
+                    android:layout_column="0"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_row="1"
+                    android:text="暂停"
+                    app:layout_constraintHorizontal_bias="0.692"
+                    app:layout_constraintLeft_toRightOf="@+id/button3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="57dp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/LabelStyle"
+                    android:layout_width="64dp"
+                    android:layout_height="35dp"
+                    android:layout_column="1"
+                    android:layout_marginLeft="198dp"
+                    android:layout_marginTop="57dp"
+                    android:layout_row="1"
+                    android:text="播放"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="252dp"
+                    android:layout_height="52dp"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="7dp"
+                    android:textColor="#ffffff"
+                    android:text="        这首乐曲自始至终流露的是一位饱尝人间辛酸和痛苦的盲艺人的思绪情感."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="92dp"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="344dp"
+                android:layout_height="254dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="258dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/shici" />
+
+            <Button
+                android:id="@+id/button4"
+
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="8dp"
+                android:layout_row="1"
+                android:text="暂停"
+                app:layout_constraintLeft_toRightOf="@+id/button5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="27dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.062" />
+
+            <Button
+                android:id="@+id/button5"
+
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="445dp"
+                android:layout_row="1"
+                android:text="播放"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>

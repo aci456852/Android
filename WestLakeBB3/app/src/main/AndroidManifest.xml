@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.highlevel">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="WestLake"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentCustomservices"
+            android:label="@string/title_robot"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ten_one_sudi" />
+        <activity android:name=".ten_two_duanqiao" />
+        <activity android:name=".ten_three_pinglake" />
+        <activity android:name=".ten_four_liu" />
+        <activity android:name=".ten_five_feng" />
+        <activity android:name=".ten_six_santan" />
+        <activity android:name=".ten_seven_watchfish" />
+        <activity android:name=".ten_eight_sorth" />
+        <activity android:name=".ten_nine_leifeng" />
+        <activity android:name=".ten_ten_hehua"></activity>
+    </application>
+
+</manifest>
