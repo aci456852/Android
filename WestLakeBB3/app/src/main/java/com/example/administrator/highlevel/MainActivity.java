@@ -27,13 +27,12 @@ public class MainActivity extends AppCompatActivity {
                     transaction.commit();
                     return true;
                 case R.id.fragment_Trailer:
-                    Fragment fragmentTrailer=new FragmentTrailer();
-                    transaction.replace(R.id.content,fragmentTrailer);
-                    transaction.commit();
+                    Intent intent = new Intent(MainActivity.this,FragmentTrailer.class);
+                    startActivity(intent);
                     return true;
                 case R.id.fragment_Customerservice:
-                    Intent intent = new Intent(MainActivity.this,FragmentCustomservices.class);
-                    startActivity(intent);
+                    Intent intent2 = new Intent(MainActivity.this,FragmentCustomservices.class);
+                    startActivity(intent2);
                     return true;
             }
             return false;

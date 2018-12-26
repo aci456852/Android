@@ -20,7 +20,7 @@
     <style name="LabelStyle">
         <item name="android:textColor">#ffffff</item>
         <item name="android:background">#54a7ea</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">23dp</item>
     </style>
 
     <style name="TextStyle">

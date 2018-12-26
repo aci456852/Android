@@ -1,6 +1,10 @@
 package com.example.administrator.highlevel;
 
 import android.app.Fragment;
+import android.content.ComponentName;
+import android.content.Intent;
+import android.content.ServiceConnection;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimationDrawable;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -9,64 +13,72 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.Toast;
 import android.widget.VideoView;
 
 import java.io.IOException;
+
+import static android.content.Context.BIND_AUTO_CREATE;
 
 
 /**
  * Created by Administrator on 2017/12/8.
  */
 
-public class FragmentTrailer extends Fragment {
-    MediaPlayer mediaPlayer1;
-    MediaPlayer mediaPlayer2;
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_trailer,container,false);
-        mediaPlayer1 = MediaPlayer.create(getActivity(),R.raw.two);
-        mediaPlayer2 = MediaPlayer.create(getActivity(),R.raw.shici);
+public class FragmentTrailer extends AppCompatActivity{
 
-        Button button= (Button) view.findViewById(R.id.button3);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mediaPlayer1.start();
-            }
-        });
-        Button button2=(Button) view.findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mediaPlayer1.pause();
-            }
-        });
-
-        Button button5= (Button) view.findViewById(R.id.button5);
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mediaPlayer2.start();
-            }
-        });
-        Button button4=(Button) view.findViewById(R.id.button4);
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mediaPlayer2.pause();
-            }
-        });
-        return view;
+    private  Button start,stop;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_trailer);
+        start=(Button)findViewById(R.id.button_play1);
+        stop=(Button)findViewById(R.id.button_stop1);
+        start.setOnClickListener(startlis);
+        stop.setOnClickListener(stoplis);
     }
+
+    private void requestPower() {
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+        }
+    }
+    private OnClickListener startlis=new OnClickListener(){
+
+        @Override
+        public void onClick(View v) {
+            //启动服务
+            startService(new Intent(FragmentTrailer.this, MusicService.class));
+        }
+
+    };
+    private OnClickListener stoplis=new OnClickListener(){
+
+        @Override
+        public void onClick(View v) {
+            //停止服务
+            stopService(new Intent(FragmentTrailer.this,MusicService.class));
+        }
+
+    };
 
 }
