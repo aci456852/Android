@@ -17,7 +17,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editText_Que"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -27,10 +27,9 @@
             android:text="" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/send"
             android:layout_width="60dp"
             android:layout_height="50dp"
-            android:onClick="handleSendMessage"
             style="@style/LabelStyle"
             android:background="@drawable/yuanjiao3"
             android:layout_marginRight="10dp"
