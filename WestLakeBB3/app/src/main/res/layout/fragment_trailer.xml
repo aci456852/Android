@@ -9,56 +9,88 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/img_music"
                     android:layout_width="300dp"
                     android:layout_height="300dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="36dp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.226"
-                    app:srcCompat="@drawable/erquanyy" />
-
-                <Button
-                    android:id="@+id/button_play1"
-                    style="@style/LabelStyle"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
-                    android:layout_column="0"
-                    android:layout_marginRight="199dp"
-                    android:layout_marginTop="425dp"
-                    android:layout_row="1"
-                    android:text="播放"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/button_stop1"
-                    style="@style/LabelStyle"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
-                    android:layout_column="1"
-                    android:layout_marginLeft="208dp"
-                    android:layout_marginTop="425dp"
-                    android:layout_row="1"
-                    android:text="暂停"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:srcCompat="@drawable/musicimg" />
 
             </android.support.constraint.ConstraintLayout>
+
         </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="395dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/bt_play"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@android:drawable/ic_media_play"
+            android:gravity="center"
+            android:text="播放" />
+
+        <TextView
+            android:id="@+id/bt_pause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@android:drawable/ic_media_pause"
+            android:gravity="center"
+            android:text="暂停" />
+
+        <TextView
+            android:id="@+id/bt_replay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@android:drawable/ic_media_play"
+            android:gravity="center"
+            android:text="重播" />
+
+
+    </LinearLayout>
 
 </RelativeLayout>

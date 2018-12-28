@@ -36,11 +36,11 @@ public class FragmentCustomservices extends Fragment {
     private Button btn;
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.activity_fragment_customservices,container,false);
+        View view=inflater.inflate(R.layout.fragment_customservices,container,false);
         messageAdapter=new MessageAdapter();
         listView = ((ListView) view.findViewById(R.id.listView));
         listView.setAdapter(messageAdapter);
-        listView.setDividerHeight(0);
+        listView.setDividerHeight(0);//分割线
         btn=(Button)view.findViewById(R.id.send);
         que=(EditText) view.findViewById(R.id.editText_Que);
         btn.setOnClickListener(handleSendMessage);
@@ -48,7 +48,7 @@ public class FragmentCustomservices extends Fragment {
     }
     /*protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment_customservices);
+        setContentView(R.layout.fragment_customservices);
         messageAdapter=new MessageAdapter();
         listView = ((ListView) findViewById(R.id.listView));
         listView.setAdapter(messageAdapter);
@@ -59,7 +59,7 @@ public class FragmentCustomservices extends Fragment {
 
         @Override
         public void onClick(View view) {
-            final ChatMessage chatMessage=new ChatMessage();
+            ChatMessage chatMessage=new ChatMessage();
             chatMessage.setId(id);
             id=id+1;
             chatMessage.setName("lzy");
@@ -68,7 +68,7 @@ public class FragmentCustomservices extends Fragment {
             chatMessage.setWords(words);
 
             messageAdapter.addMessage(chatMessage);
-            messageAdapter.notifyDataSetChanged();
+            messageAdapter.notifyDataSetChanged();//刷新
             listView.setSelection(messageAdapter.getCount()-1);
 
             AsyncHttpClient httpClient=new AsyncHttpClient();
